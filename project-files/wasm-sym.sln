@@ -6,6 +6,10 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "naxos", "naxos.vcxproj", "{B6F5FBBB-EC3F-4B5A-80C0-B8439C3706D0}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wasm-sym", "wasm-sym.vcxproj", "{6F904404-6F7F-4623-92CC-9CE5F9584DE4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{380FD28E-F505-4576-96CA-5CAD916F9106} = {380FD28E-F505-4576-96CA-5CAD916F9106}
+		{B6F5FBBB-EC3F-4B5A-80C0-B8439C3706D0} = {B6F5FBBB-EC3F-4B5A-80C0-B8439C3706D0}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{673B4C2C-530B-4F67-8FC4-E1B63694A87F}"
 	ProjectSection(SolutionItems) = preProject

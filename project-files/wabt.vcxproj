@@ -30,6 +30,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>..\Debug\wabt\</OutDir>
+    <IntDir>$(SolutionDir)..\build\$(Platform)\$(Configuration)\wabt\</IntDir>
+    <IncludePath>C:\Security-Spring2018\wasm-sym\wabt\project-files;C:\Security-Spring2018\wasm-sym\wabt;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -37,9 +39,24 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\wabt\src\common.cc" />
+    <ClCompile Include="..\wabt\src\config.cc" />
+    <ClCompile Include="..\wabt\src\interp.cc" />
+    <ClCompile Include="..\wabt\src\opcode.cc" />
+    <ClCompile Include="..\wabt\src\stream.cc" />
+    <ClCompile Include="..\wabt\src\string-view.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\wabt\src\common.h" />
+    <ClInclude Include="..\wabt\src\interp.h" />
+    <ClInclude Include="..\wabt\src\make-unique.h" />
+    <ClInclude Include="..\wabt\src\opcode.h" />
+    <ClInclude Include="..\wabt\src\result.h" />
+    <ClInclude Include="..\wabt\src\stream.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
