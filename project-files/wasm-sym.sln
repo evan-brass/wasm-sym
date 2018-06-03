@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "naxos", "naxos.vcxproj", "{B6F5FBBB-EC3F-4B5A-80C0-B8439C3706D0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wasm-sym", "wasm-sym.vcxproj", "{6F904404-6F7F-4623-92CC-9CE5F9584DE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{673B4C2C-530B-4F67-8FC4-E1B63694A87F}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wabt", "wabt.vcxproj", "{380FD28E-F505-4576-96CA-5CAD916F9106}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6F5FBBB-EC3F-4B5A-80C0-B8439C3706D0}.Debug|x64.ActiveCfg = Debug|x64
+		{6F904404-6F7F-4623-92CC-9CE5F9584DE4}.Debug|x64.ActiveCfg = Debug|x64
+		{6F904404-6F7F-4623-92CC-9CE5F9584DE4}.Debug|x64.Build.0 = Debug|x64
+		{380FD28E-F505-4576-96CA-5CAD916F9106}.Debug|x64.ActiveCfg = Debug|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D804EAF5-F735-4402-8B26-78BE8DED27F8}
+	EndGlobalSection
+EndGlobal

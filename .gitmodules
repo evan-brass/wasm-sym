@@ -1,0 +1,9 @@
+[submodule "naxos"]
+	path = naxos
+	url = git@github.com:brassev/naxos.git
+[submodule "webassembly-examples"]
+	path = webassembly-examples
+	url = git@github.com:brassev/webassembly-examples.git
+[submodule "wabt"]
+	path = wabt
+	url = git@github.com:brassev/wabt-for-wasm-sym.git

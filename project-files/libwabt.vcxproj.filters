@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\token.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\opcode.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\error-handler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\hash-util.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\filenames.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\string-view.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\ir.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\expr-visitor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\lexer-source.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\lexer-source-line-finder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\wast-parser-lexer-shared.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\prebuilt\wast-lexer-gen.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\wast-parser.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\type-checker.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\validator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\binary-reader.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\binary-reader-logging.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\binary-writer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\binary-writer-spec.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\binary-reader-ir.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\binding-hash.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\interp.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\binary-reader-interp.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\apply-names.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\generate-names.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\resolve-names.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\binary.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\color.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\common.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\config.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\feature.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\leb128.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\literal.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\option-parser.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\stream.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\tracing.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Security-Spring2018\wasm-sym\wabt\src\utf8.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Security-Spring2018\wasm-sym\wabt\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9E70891D-2EF7-3797-BEB1-7D293A06F759}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
