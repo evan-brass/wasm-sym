@@ -6,6 +6,17 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\Path.cpp" />
+    <ClCompile Include="..\src\SymEnv.cpp" />
+    <ClCompile Include="..\src\SymThread.cpp" />
+    <ClCompile Include="..\src\wasm-sym.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\Path.h" />
+    <ClInclude Include="..\src\SymEnv.h" />
+    <ClInclude Include="..\src\SymThread.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{6F904404-6F7F-4623-92CC-9CE5F9584DE4}</ProjectGuid>
@@ -58,15 +69,6 @@
       <AdditionalDependencies>wabt.lib;naxos.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Path.cpp" />
-    <ClCompile Include="SymEnv.cpp" />
-    <ClCompile Include="wasm-sym.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Path.h" />
-    <ClInclude Include="SymEnv.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

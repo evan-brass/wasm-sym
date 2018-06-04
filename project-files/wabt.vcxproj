@@ -6,6 +6,72 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\wabt\src\binary-reader-interp.cc" />
+    <ClCompile Include="..\wabt\src\binary-reader-logging.cc" />
+    <ClCompile Include="..\wabt\src\binary-reader-opcnt.cc" />
+    <ClCompile Include="..\wabt\src\binary-reader.cc" />
+    <ClCompile Include="..\wabt\src\binary.cc" />
+    <ClCompile Include="..\wabt\src\common.cc" />
+    <ClCompile Include="..\wabt\src\config.cc" />
+    <ClCompile Include="..\wabt\src\feature.cc" />
+    <ClCompile Include="..\wabt\src\interp.cc" />
+    <ClCompile Include="..\wabt\src\leb128.cc" />
+    <ClCompile Include="..\wabt\src\opcode.cc" />
+    <ClCompile Include="..\wabt\src\stream.cc" />
+    <ClCompile Include="..\wabt\src\string-view.cc" />
+    <ClCompile Include="..\wabt\src\type-checker.cc" />
+    <ClCompile Include="..\wabt\src\utf8.cc" />
+    <ClCompile Include="..\wabt\src\validator.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\wabt\src\apply-names.h" />
+    <ClInclude Include="..\wabt\src\binary-reader-interp.h" />
+    <ClInclude Include="..\wabt\src\binary-reader-ir.h" />
+    <ClInclude Include="..\wabt\src\binary-reader-logging.h" />
+    <ClInclude Include="..\wabt\src\binary-reader-nop.h" />
+    <ClInclude Include="..\wabt\src\binary-reader-objdump.h" />
+    <ClInclude Include="..\wabt\src\binary-reader-opcnt.h" />
+    <ClInclude Include="..\wabt\src\binary-reader.h" />
+    <ClInclude Include="..\wabt\src\binary-writer-spec.h" />
+    <ClInclude Include="..\wabt\src\binary-writer.h" />
+    <ClInclude Include="..\wabt\src\binary.h" />
+    <ClInclude Include="..\wabt\src\binding-hash.h" />
+    <ClInclude Include="..\wabt\src\c-writer.h" />
+    <ClInclude Include="..\wabt\src\cast.h" />
+    <ClInclude Include="..\wabt\src\circular-array.h" />
+    <ClInclude Include="..\wabt\src\color.h" />
+    <ClInclude Include="..\wabt\src\common.h" />
+    <ClInclude Include="..\wabt\src\error-handler.h" />
+    <ClInclude Include="..\wabt\src\expr-visitor.h" />
+    <ClInclude Include="..\wabt\src\feature.h" />
+    <ClInclude Include="..\wabt\src\filenames.h" />
+    <ClInclude Include="..\wabt\src\generate-names.h" />
+    <ClInclude Include="..\wabt\src\hash-util.h" />
+    <ClInclude Include="..\wabt\src\interp.h" />
+    <ClInclude Include="..\wabt\src\intrusive-list.h" />
+    <ClInclude Include="..\wabt\src\ir.h" />
+    <ClInclude Include="..\wabt\src\leb128.h" />
+    <ClInclude Include="..\wabt\src\lexer-source-line-finder.h" />
+    <ClInclude Include="..\wabt\src\lexer-source.h" />
+    <ClInclude Include="..\wabt\src\literal.h" />
+    <ClInclude Include="..\wabt\src\make-unique.h" />
+    <ClInclude Include="..\wabt\src\opcode.h" />
+    <ClInclude Include="..\wabt\src\option-parser.h" />
+    <ClInclude Include="..\wabt\src\resolve-names.h" />
+    <ClInclude Include="..\wabt\src\result.h" />
+    <ClInclude Include="..\wabt\src\stream.h" />
+    <ClInclude Include="..\wabt\src\string-view.h" />
+    <ClInclude Include="..\wabt\src\token.h" />
+    <ClInclude Include="..\wabt\src\tracing.h" />
+    <ClInclude Include="..\wabt\src\type-checker.h" />
+    <ClInclude Include="..\wabt\src\utf8.h" />
+    <ClInclude Include="..\wabt\src\validator.h" />
+    <ClInclude Include="..\wabt\src\wast-lexer.h" />
+    <ClInclude Include="..\wabt\src\wast-parser-lexer-shared.h" />
+    <ClInclude Include="..\wabt\src\wast-parser.h" />
+    <ClInclude Include="..\wabt\src\wat-writer.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{380FD28E-F505-4576-96CA-5CAD916F9106}</ProjectGuid>
@@ -42,22 +108,6 @@
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\wabt\src\common.cc" />
-    <ClCompile Include="..\wabt\src\config.cc" />
-    <ClCompile Include="..\wabt\src\interp.cc" />
-    <ClCompile Include="..\wabt\src\opcode.cc" />
-    <ClCompile Include="..\wabt\src\stream.cc" />
-    <ClCompile Include="..\wabt\src\string-view.cc" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\wabt\src\common.h" />
-    <ClInclude Include="..\wabt\src\interp.h" />
-    <ClInclude Include="..\wabt\src\make-unique.h" />
-    <ClInclude Include="..\wabt\src\opcode.h" />
-    <ClInclude Include="..\wabt\src\result.h" />
-    <ClInclude Include="..\wabt\src\stream.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -15,21 +15,27 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="wasm-sym.cpp">
+    <ClCompile Include="..\src\SymEnv.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Path.cpp">
+    <ClCompile Include="..\src\Path.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SymEnv.cpp">
+    <ClCompile Include="..\src\wasm-sym.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SymThread.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Path.h">
+    <ClInclude Include="..\src\Path.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SymEnv.h">
+    <ClInclude Include="..\src\SymEnv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SymThread.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

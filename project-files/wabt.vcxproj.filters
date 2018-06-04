@@ -11,42 +11,192 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\wabt\src\interp.cc">
+    <ClCompile Include="..\wabt\src\binary.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\wabt\src\stream.cc">
+    <ClCompile Include="..\wabt\src\binary-reader.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wabt\src\binary-reader-interp.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wabt\src\binary-reader-opcnt.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\wabt\src\common.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\wabt\src\config.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wabt\src\feature.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wabt\src\interp.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wabt\src\leb128.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\wabt\src\opcode.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\wabt\src\config.cc">
+    <ClCompile Include="..\wabt\src\stream.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\wabt\src\string-view.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\wabt\src\utf8.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wabt\src\binary-reader-logging.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wabt\src\validator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wabt\src\type-checker.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\wabt\src\interp.h">
+    <ClInclude Include="..\wabt\src\tracing.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\wabt\src\stream.h">
+    <ClInclude Include="..\wabt\src\type-checker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\utf8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\validator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\wast-lexer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\wast-parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\wast-parser-lexer-shared.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\wat-writer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\apply-names.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\binary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\binary-reader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\binary-reader-interp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\binary-reader-ir.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\binary-reader-logging.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\binary-reader-nop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\binary-reader-objdump.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\binary-reader-opcnt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\binary-writer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\binary-writer-spec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\binding-hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\cast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\circular-array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\color.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\wabt\src\common.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\wabt\src\result.h">
+    <ClInclude Include="..\wabt\src\c-writer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\error-handler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\expr-visitor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\feature.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\filenames.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\generate-names.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\hash-util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\interp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\intrusive-list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\ir.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\leb128.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\lexer-source.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\lexer-source-line-finder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\literal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\wabt\src\make-unique.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\wabt\src\opcode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\option-parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\resolve-names.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\result.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\string-view.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\wabt\src\token.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
