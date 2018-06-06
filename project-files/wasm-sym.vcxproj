@@ -7,15 +7,21 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\Path.cpp" />
-    <ClCompile Include="..\src\SymEnv.cpp" />
+    <ClCompile Include="..\src\SymEnvironment.cpp" />
     <ClCompile Include="..\src\SymThread.cpp" />
     <ClCompile Include="..\src\wasm-sym.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\src\Path.h" />
-    <ClInclude Include="..\src\SymEnv.h" />
+    <ClInclude Include="..\src\SymEnvironment.h" />
     <ClInclude Include="..\src\SymThread.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="naxos.vcxproj">
+      <Project>{b6f5fbbb-ec3f-4b5a-80c0-b8439c3706d0}</Project>
+    </ProjectReference>
+    <ProjectReference Include="wabt.vcxproj">
+      <Project>{380fd28e-f505-4576-96ca-5cad916f9106}</Project>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
