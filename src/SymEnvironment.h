@@ -2,8 +2,11 @@
 
 #include <memory>
 #include <vector>
+#include <list>
 
 #include <interp.h>
+
+#include "SymValue.h"
 
 class SymEnvironment
 {
@@ -49,13 +52,14 @@ protected:
 	std::shared_ptr<std::vector<std::unique_ptr<wabt::interp::Module>>> modules_;
 	std::shared_ptr<std::vector<wabt::interp::FuncSignature>> sigs_;
 	std::shared_ptr<std::vector<std::unique_ptr<wabt::interp::Func>>> funcs_;
+	std::shared_ptr<std::vector<uint8_t>> binary_;
 
 	// TODO: These need to be symbolicified
 	std::vector<wabt::interp::Memory> memories_;
 	std::vector<wabt::interp::Table> tables_;
 	std::vector<wabt::interp::Global> globals_;
 
-	// I don't really understand the following member and would like to eventually remove it.
-	std::unique_ptr<wabt::OutputBuffer> istream_;
+	// List of constraints that exist on
+	std::list<SymValue> constraints;
 };
 
