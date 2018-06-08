@@ -44,6 +44,9 @@ public:
 	}
 
 	//explicit operator wabt::interp::Environment();
+	// List of constraints that exist on this execution path (full constraints must be pulled from the environment chain).
+	std::list<std::shared_ptr<naxos::Ns_Expression>> constraints;
+
 protected:
 	//friend class wabt::interp::Thread;
 	friend class SymThread;
@@ -59,7 +62,5 @@ protected:
 	std::vector<wabt::interp::Table> tables_;
 	std::vector<wabt::interp::Global> globals_;
 
-	// List of constraints that exist on
-	std::list<SymValue> constraints;
 };
 
