@@ -48,7 +48,8 @@ int main(int argc, char** argv) {
 //	shared_ptr<Path> pathRoot(new Path());
 
 	// Queue to manage which paths we are advancing
-	queue<unique_ptr<SymThread>> threads;
+	shared_ptr<queue<unique_ptr<SymThread>>> threads(new queue<unique_ptr<SymThread>>());
+	SymThread::threadlist = threads;
 
 	// File contents
 	vector<uint8_t> fileContents;
