@@ -43,7 +43,6 @@ public:
 		return &tables_[index];
 	}
 
-	//explicit operator wabt::interp::Environment();
 	// List of constraints that exist on this execution path (full constraints must be pulled from the environment chain).
 	std::list<std::shared_ptr<naxos::Ns_Expression>> constraints;
 
