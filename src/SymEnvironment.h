@@ -5,8 +5,7 @@
 #include <list>
 
 #include <interp.h>
-
-#include "SymValue.h"
+#include <naxos.h>
 
 class SymEnvironment
 {
@@ -30,7 +29,7 @@ public:
 		assert(index < funcs_->size());
 		return (*funcs_)[index].get();
 	}
-	wabt::interp::Global* GetGlobal(wabt::Index index) {
+	/*wabt::interp::Global* GetGlobal(wabt::Index index) {
 		assert(index < globals_.size());
 		return &globals_[index];
 	}
@@ -41,9 +40,12 @@ public:
 	wabt::interp::Table* GetTable(wabt::Index index) {
 		assert(index < tables_.size());
 		return &tables_[index];
-	}
+	}*/
 
-	//explicit operator wabt::interp::Environment();
+	// List of constraints that exist on this execution path (full constraints must be pulled from the environment chain).
+	std::list<std::unique_ptr<naxos::Ns_ExprConstr>> constraints;
+	std::list<std::shared_ptr<naxos::NsIntVar>> vars;
+
 protected:
 	//friend class wabt::interp::Thread;
 	friend class SymThread;
@@ -55,11 +57,9 @@ protected:
 	std::shared_ptr<std::vector<uint8_t>> binary_;
 
 	// TODO: These need to be symbolicified
-	std::vector<wabt::interp::Memory> memories_;
-	std::vector<wabt::interp::Table> tables_;
-	std::vector<wabt::interp::Global> globals_;
+	//std::vector<wabt::interp::Memory> memories_;
+	//std::vector<wabt::interp::Table> tables_;
+	//std::vector<wabt::interp::Global> globals_;
 
-	// List of constraints that exist on
-	std::list<SymValue> constraints;
 };
 
