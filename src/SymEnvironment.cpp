@@ -2,6 +2,8 @@
 
 #include <stream.h>
 
+#include <naxos.h>
+
 using std::shared_ptr;
 using std::vector;
 using std::unique_ptr;
@@ -26,9 +28,9 @@ SymEnvironment::SymEnvironment(const shared_ptr<SymEnvironment> p) : parent(p) {
 
 		// These are self owned (soon to be) symbolic constraint containers.
 		// Use copy constructors
-		memories_ = vector<Memory>(parent->memories_);
+		/*memories_ = vector<Memory>(parent->memories_);
 		tables_ = vector<Table>(parent->tables_);
-		globals_ = vector<Global>(parent->globals_);
+		globals_ = vector<Global>(parent->globals_);*/
 	}
 }
 
@@ -40,7 +42,7 @@ SymEnvironment::SymEnvironment(wabt::interp::Environment & e) : SymEnvironment()
 	*binary_ = std::move(e.istream_->data);
 
 	// Move the rest of the objects (These aren't shared pointers so nothing special)
-	memories_ = std::move(e.memories_);
+	/*memories_ = std::move(e.memories_);
 	tables_ = std::move(e.tables_);
-	globals_ = std::move(e.globals_);
+	globals_ = std::move(e.globals_);*/
 }
