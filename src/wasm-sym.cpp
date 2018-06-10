@@ -206,8 +206,4 @@ int main(int argc, char** argv) {
 	else {
 		cout << "Usage format: wasm-sym <WASM File>" << endl;
 	}
-
-	cout << "Press any key and enter to close...";
-	char x;
-	std::cin >> x;
 }

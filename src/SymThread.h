@@ -14,10 +14,10 @@
 
 extern naxos::NsProblemManager pm;
 
-const long UintMax = 2147483519; // This is a limitation of Naxos
+const long UintMax = 1047483519; // This is a limitation of Naxos
 const long UintMin = 0;
-const long IntMax =  2147483519;
-const long IntMin = -2147483647;
+const long IntMax =  1047483519;
+const long IntMin = -1047483647;
 
 typedef std::shared_ptr<naxos::NsIntVar> Value;
 typedef uint32_t CodePointer;
