@@ -14,11 +14,11 @@ using naxos::Ns_ExprConstrYeqC;
 using naxos::Ns_ExprConstrYeqZ;
 
 void SymThread::dump() {
-	cout << "Value Stack:" << endl;
+	/*cout << "Value Stack:" << endl;
 	for (unsigned i = 0; i < value_stack_top_; ++i) {
 		auto v = value_stack_[i];
 		cout << "\t" << *v << ": pm*=" << v->pm <<  endl;
-	}
+	}*/
 }
 
 wabt::interp::Result SymThread::Add() {
